@@ -1,99 +1,80 @@
 <template>
-<header class = "pb-1 overflow-hidden " >
-            <div class = "container">
-                <div class = "row py-5">
-                    <div class = "col-sm-6 text-lg-start">
-                        <a href = "#" class = "navbar-brand text-white fs-1">
-                            <img src="./assets/logo.png" alt="">
-                        </a>
-                    </div>
-                    <div class = "col-sm-6 d-none d-md-flex text-white align-items-center nav-icons justify-content-end">
-                        <p class = "fw-bold mb-0"><router-link to="/" style="color: aliceblue;">Home</router-link></p>
-                        <p class = "fw-bold mb-0"><router-link to="/about" style="color: aliceblue;">About</router-link></p>
-                    
-                    </div>
-                </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">PROFILE | Lusi Diah Wiranti</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                <div class = "row">
-                    <div class = "col-lg-6 text-white text-center text-lg-start">
-                        <h1 class = "display-1 fw-normal mt-6">Haloo Saya Lusi Diah Wiranti</h1>
-                        <p class = "my-4 lead fs-5">Ini Merupakan Website Profile Saya</p>
-                    </div>
-                    <div class = "col-lg-6 lusi-img d-none d-lg-flex justify-content-end">
-                        <img src = "./assets/lusii4.png">
-                    </div>
-                </div>
-            </div>
-</header>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="mx-auto"></div>
+
+        <ul class="nav-link">
+          <li><a href="" class="active"><router-link to="/" style="color: #06060b;">Home</router-link></a></li>
+          <li><a href="" class="active"><router-link to="/about" style="color: #06060b;">About</router-link></a></li>
+          <li><a href="" class="active"><router-link to="/album" style="color: #06060b;">Album</router-link></a></li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
 
   <router-view />
 </template>
 
 <script>
+// import HelloWorld from './components/HelloWorld.vue'
+
 export default {
   name: 'App',
   components: {
+    // HelloWorld
   }
 }
 </script>
 
 <style>
-/* misc stylings */
-ul li{
-    list-style-type: none;
-}
-.container{
-    max-width: 1200px;
-}
-.display-1{
-    letter-spacing: 1px;
-}
-.bg-green{
-    background-color: var(--green)!important;
-}
-.bg-grey{
-    background-color: var(--light-grey);
-}
-.text-green{
-    color: var(--green);
-}
+.navbar-expand-lg {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  background-color: rgba(171, 102, 102, 0.93);
+  color: white;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 30px ;
 
-.lh-lg{
-    line-height: 1.7!important;
 }
-.circle-icon{
-    width:55px;
-    height: 55px;
-    border-radius: 50%;
-    background-color: var(--green);
-}
+.nav-link{
+  display: flex;
+  align-items: center;
 
-/* header */
-header{
-    height: 100vh;
-    background-color: rgba(101, 37, 67, 0.99);
 }
-
-.navbar-brand .fa{
-    font-size: 1.3rem;
+.nav-link li{
+  border: 1px solid #fff0f0;
+  border-radius: 20px;
+  list-style: none;
+  margin-left: 20px;
+  align-items: center;
+  text-decoration: none;
+  float: left;
 }
-
-.navbar-brand img{
-  width: 150px;
+.nav-link li a{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
 }
-
-.nav-icons p{
-    font-size: 1rem;
-    margin-right: 0.6rem;
+.active{
+  text-align: center;
+  padding: 10px;
 }
-.nav-icons{
-    font-size: 1.2rem;
-}
-.btn-header:hover{
-    background-color: #fff;
-    color: var(--green)!important;
-}
-.lusi-img img{
-    width: 400px;
+.nav-link li a:hover {
+  color: #06060b;
+  font-size: 20px;
+  transition: .2s;
+  background-color: rgb(255, 240, 240);
 }
 </style>
+
