@@ -2,10 +2,16 @@
     <!--banner image-->
     
     <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
-        <div class="content text-center">
-            <h1 class="text-white">Haloooo Saya Lusi Diah Wiranti</h1>
+        <div class="content text-start">
+            <h1 class="text-white">Welcome To My Website!!</h1>
+        </div>
+        <div class = "col-lg-5">
+          <img src="../assets/cansss.jpg" class="img-fluid">
+
         </div>
     </div>
+
+
 
     <!--kontent-->
     <section id = "sec-4" class = "py-5">
@@ -36,6 +42,13 @@ export default {
 
 <style>
 .banner-image {
-    background-image: url(../assets/background.png);
+    background-color: rgba(171, 102, 102, 0.62);
+}
+
+.col-lg-5{
+  margin-top: 300px;
+  height: 600px;
+  margin-bottom: 300px;
+  margin-right: -300px;
 }
 </style>
