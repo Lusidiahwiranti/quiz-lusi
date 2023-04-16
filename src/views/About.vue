@@ -4,12 +4,11 @@
            <div class = "container my-4">
                <div class = "row gx-lg-5">
                    <div class = "col-lg-6 mb-5">
-                        <img src = "../assets/lusii2.jpg" class = "img-fluid">
+                        <img src = "../assets/diah.jpg" class = "img-fluid">
                    </div>
                    <div class = "col-lg-6">
-                       <h3>Tentang Saya</h3>
+                       <h3>About Me</h3>
                        <p class = "text-muted fw-light lh-lg my-4">Saya lahir pada tanggal 20 November 2003 di Kota Duri, Riau. Saat ini saya menyukai bidang desain dan fotografi. Oleh karena di perkuliahan saya sering bergabung kepanitiaan divisi Humas Infromasi dan Dokumentasi (HID).  </p>
-                       <button type = "button" class = "btn btn-green mt-2">Read more</button>
                    </div>
                </div>
            </div>
@@ -127,7 +126,7 @@ ul li{
 
 /* section 6 */
 #sec-6{
-    background: linear-gradient(rgba(22, 219, 147, 0.9), rgba(22, 219, 147, 0.9)), url(../assets/section-6-bg.jpg) center/cover no-repeat;
+    background: linear-gradient(rgba(171, 102, 102, 0.93), rgba(171, 102, 102, 0.93)), url(../assets/section-6-bg.jpg) center/cover no-repeat;
 }
 #sec-6 .circle-icon{
     width: 95px;
