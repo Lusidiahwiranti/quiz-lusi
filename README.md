@@ -1,5 +1,4 @@
 # profile-lusi
-![cansss](https://user-images.githubusercontent.com/91247273/232331935-f76bfcec-c649-4445-93a0-70724778f008.jpg)
 
 ## Project setup
 ```
